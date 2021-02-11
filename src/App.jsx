@@ -1,12 +1,11 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
-import './App.css';
+import ForceUpdateExample from './03/ForceUpdateExample';
 
 class App extends Component {
   render() {
     return (
-      <div className="App">
-        <h1 className="title">Do it! React Start</h1>
+      <div>
+        <ForceUpdateExample />
       </div>
     );
   }
