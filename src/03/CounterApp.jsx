@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
-import Counter from './03/Counter2';
+import Counter from './Counter2';
 
-class CounterApp extends Component {
+class App extends Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -13,8 +13,8 @@ class CounterApp extends Component {
     this.setState(({ count }) => ({ count: count + 1 }));
   }
   render() {
-    return <Counter count={this.state.count} onAdd={this.increaseCount.bind(this)} />;
+    return <Counter count={this.state.count} />;
   }
 }
 
-export default CounterApp;
+export default App;
