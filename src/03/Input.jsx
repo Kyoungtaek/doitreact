@@ -35,6 +35,7 @@ class Input extends PureComponent {
     const { errorMessage, label, name, value, type, onFocus } = this.props;
     return (
       <label>
+        {label}
         <input
           id={`input_${name}`}
           ref={this.setRef}
