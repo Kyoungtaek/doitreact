@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import Counter from './03/Counter';
+import ListExample from './03/ListExample';
 import NewCounter from './03/NewCounter';
+import Todolist from './03/Todolist';
 
 class App extends Component {
   constructor(props) {
@@ -17,13 +19,7 @@ class App extends Component {
   render() {
     return (
       <div>
-        <div>
-          <Counter count={this.state.count} />
-        </div>
-        <div>
-          <NewCounter count={this.state.count} />
-        </div>
-        <button onClick={this.resetCount}>{this.state.count + 10}으로 초기화</button>
+        <Todolist />
       </div>
     );
   }
